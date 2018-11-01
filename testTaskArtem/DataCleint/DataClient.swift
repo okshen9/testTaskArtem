@@ -30,7 +30,7 @@ class DataClient {
                         completion(annotations.responses.first?.labelAnnotations, nil)
                     }
                     else if response.response?.statusCode == 403 {
-                        completion(nil, NSError(domain: "Проблема с аунтификацией", code: 403, userInfo: nil))
+                        completion(nil, NSError(domain: "Проблема с аутентификация", code: 403, userInfo: nil))
                     } else if response.response?.statusCode == 400 {
                         completion(nil, NSError(domain: "Слишком большое фото", code: 400, userInfo: nil))
                     } else if response.response?.statusCode == nil {
