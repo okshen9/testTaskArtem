@@ -15,7 +15,7 @@
 		EC0B438921872AFD00DAE264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0B438721872AFD00DAE264 /* LaunchScreen.storyboard */; };
 		EC0B43AD21874EC700DAE264 /* AnnotationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0B43AC21874EC700DAE264 /* AnnotationTVC.swift */; };
 		EC0B43AF2189C00F00DAE264 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0B43AE2189C00F00DAE264 /* APIClient.swift */; };
-		EC0B43EB218A11E800DAE264 /* CodableStract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0B43EA218A11E800DAE264 /* CodableStract.swift */; };
+		EC0B43EB218A11E800DAE264 /* AnnotationsStract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0B43EA218A11E800DAE264 /* AnnotationsStract.swift */; };
 		EC764152218AF60200817D4E /* ExtensionUIImage.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC764151218AF60200817D4E /* ExtensionUIImage.swift.swift */; };
 		EC764154218AF6F200817D4E /* DataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC764153218AF6F200817D4E /* DataClient.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +52,7 @@
 		EC0B439A21872AFE00DAE264 /* testTaskArtemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testTaskArtemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0B43AC21874EC700DAE264 /* AnnotationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationTVC.swift; sourceTree = "<group>"; };
 		EC0B43AE2189C00F00DAE264 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		EC0B43EA218A11E800DAE264 /* CodableStract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableStract.swift; sourceTree = "<group>"; };
+		EC0B43EA218A11E800DAE264 /* AnnotationsStract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationsStract.swift; sourceTree = "<group>"; };
 		EC764151218AF60200817D4E /* ExtensionUIImage.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImage.swift.swift; sourceTree = "<group>"; };
 		EC764153218AF6F200817D4E /* DataClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				EC764153218AF6F200817D4E /* DataClient.swift */,
-				EC0B43EA218A11E800DAE264 /* CodableStract.swift */,
+				EC0B43EA218A11E800DAE264 /* AnnotationsStract.swift */,
 			);
 			path = DataCleint;
 			sourceTree = "<group>";
@@ -340,7 +340,7 @@
 				EC764152218AF60200817D4E /* ExtensionUIImage.swift.swift in Sources */,
 				EC0B43AF2189C00F00DAE264 /* APIClient.swift in Sources */,
 				EC0B437F21872AFB00DAE264 /* AppDelegate.swift in Sources */,
-				EC0B43EB218A11E800DAE264 /* CodableStract.swift in Sources */,
+				EC0B43EB218A11E800DAE264 /* AnnotationsStract.swift in Sources */,
 				EC764154218AF6F200817D4E /* DataClient.swift in Sources */,
 				EC0B43AD21874EC700DAE264 /* AnnotationTVC.swift in Sources */,
 			);
