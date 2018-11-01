@@ -19,7 +19,7 @@ class APIClient {
         baseURL =  "https://vision.googleapis.com/v1/images:annotate?key=\(apiKey)"
     }
     
-    func getAnnotations(strImage: String, completion: @escaping ([AnnotationLabel]?, NSError?) -> ()) {
+    func getAnnotations(strImage: String, completion: @escaping (DataResponse<Any>) -> ()) {
         
         let jsonRequest = [
             "requests": [
@@ -33,25 +33,10 @@ class APIClient {
                 ]
             ]
         ]
-        
+
         Alamofire.request(self.baseURL, method: .post, parameters: jsonRequest, encoding: JSONEncoding.default, headers: nil).responseJSON
             { (response) in
-                if response.response?.statusCode == 200 {
-                    guard  let annotations = try? JSONDecoder().decode(AnnotationResponse.self, from: response.data!)  else {
-                        completion(nil, NSError(domain: "Не удалось понять ответ", code: 0, userInfo: nil))
-                        return
-                    }
-                    completion(annotations.responses.first?.labelAnnotations, nil)
-                }
-                else if response.response?.statusCode == 403 {
-                   completion(nil, NSError(domain: "Проблема с аунтификацией", code: 403, userInfo: nil))
-                } else if response.response?.statusCode == 400 {
-                    completion(nil, NSError(domain: "Слишком большое фото", code: 400, userInfo: nil))
-                } else if response.response?.statusCode == nil {
-                    completion(nil, NSError(domain: "Не удалось подключиться", code: 404, userInfo: nil))
-                } else {
-                    completion(nil, NSError(domain: "Что-то пошло не так", code: -1, userInfo: nil))
-                }
+                completion(response)
         }
     }
 }

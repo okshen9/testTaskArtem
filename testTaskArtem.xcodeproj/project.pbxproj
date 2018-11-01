@@ -148,8 +148,8 @@
 		EC764155218AFBB000817D4E /* DataCleint */ = {
 			isa = PBXGroup;
 			children = (
-				EC0B43EA218A11E800DAE264 /* CodableStract.swift */,
 				EC764153218AF6F200817D4E /* DataClient.swift */,
+				EC0B43EA218A11E800DAE264 /* CodableStract.swift */,
 			);
 			path = DataCleint;
 			sourceTree = "<group>";
