@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.7.3)
+  - KVNProgress (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - KVNProgress
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - KVNProgress
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  KVNProgress: dd83fe0da2dd18758ede59981bb009f29cf314b4
+
+PODFILE CHECKSUM: 39e0daef7aad39ee673ded80f8ed36162c902eaf
+
+COCOAPODS: 1.5.3
